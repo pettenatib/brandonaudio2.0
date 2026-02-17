@@ -3,7 +3,7 @@ import Header from "../components/header";
 function Contact() {
     return (
         <>
-            <Header />
+           
             <h1>Contact Page</h1>
         </>
     )
