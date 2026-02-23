@@ -9,10 +9,11 @@ function Background() {
         left: 0,
         width: "100vw",
         height: "100vh",
-        zIndex: -1,   // 👈 pushes it behind everything
+        zIndex: -1,   
         backgroundColor: "#000000ff"
       }}
     >
+      
       <Squares
         speed={0.21}
         squareSize={40}

@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import Background from "./components/Background";
+import Background2 from "./components/Background2";
 import Player from "./components/Player"
 
 import Home from "./pages/Home";
@@ -14,7 +14,7 @@ function App(){
     return(
     
     <BrowserRouter>
-        <Background />
+        <Background2 />
 
         
         <Header />

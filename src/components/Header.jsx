@@ -25,12 +25,12 @@ function Header() {
         <Link to="/studio">
         <div>
           <FuzzyText
-            fontSize={"4rem"} // 150px
+            fontSize={"2rem"} // 150px
             baseIntensity={0}
             hoverIntensity={0.1}
             enableHover
           >
-            Studio
+            Engineering Work
           </FuzzyText>
         </div>
         </Link>
@@ -38,19 +38,19 @@ function Header() {
         <Link to="/live">
         <div>
           <FuzzyText
-            fontSize={"4rem"} // 150px
+            fontSize={"2rem"} // 150px
             baseIntensity={0}
             hoverIntensity={0.1}
             enableHover
           >
-            Live
+            Event Production Work
           </FuzzyText>
         </div>
         </Link>
         <Link to="/contact">
         <div>
           <FuzzyText
-            fontSize={"4rem"} // 150px
+            fontSize={"2rem"} // 150px
             baseIntensity={0}
             hoverIntensity={0.1}
             enableHover
