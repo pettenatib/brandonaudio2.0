@@ -12,11 +12,8 @@ div.mainheader {
 }
 
 div.menudialog {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    z-index: 1000;
-    width: 200px;
+    position: relative;
+    width: screen-w;
     margin: auto;
     background: #ccc;
     padding: 10px 4px 8px 4px;
@@ -140,16 +137,13 @@ div.menudialog div.menuouter div.menubuttons {
     text-align: center;
 }
 
-div.menudialog div.menuouter div.menubuttons {
-    position: relative;
-    width: 100%;
-    margin: 15px 0 -7px -15px;
-    padding: 10px 15px 0 15px;
-    border-top: 1px solid #fff;
-
-    display: flex;              /* 🔥 ADD THIS */
-    justify-content: center;    /* center horizontally */
-    gap: 20px;                  /* spacing between buttons */
+div.menudialog div.menuouter div.menubuttons a {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 2px;
+    text-decoration: none;
+    color: #696969;
 }
 
 div.menudialog div.menuouter div.menubuttons a:before,
@@ -163,36 +157,49 @@ div.menudialog div.menuouter div.menubuttons a:hover:after,
 div.menudialog div.menuouter div.menubuttons a:focus:before,
 div.menudialog div.menuouter div.menubuttons a:focus:after { color: inherit; }
 
-/*div.menudialog div.menuouter div.menubuttons a:before { content: "\003c\0000a0"; }
-div.menudialog div.menuouter div.menubuttons a:after { content: "\0000a0\003e"; }*/
+div.menudialog div.menuouter div.menubuttons a:before { content: "\003c\0000a0"; }
+div.menudialog div.menuouter div.menubuttons a:after { content: "\0000a0\003e"; }
 
 div.menudialog div.menuouter div.menubuttons div.menutopborder { background-color: #000; }
 
 
 
+/* Full top bar */
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    padding: 10px 20px;
+    background: #ccc;
 
-/* Smooth transition */
-.menudialog {
-    transition: all 0.25s ease;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+
+    box-shadow: 8px 8px 0px #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
-/* Hide EVERYTHING except buttons when collapsed */
-.menudialog.collapsed .menuheader,
-.menudialog.collapsed .menutoptext,
-.menudialog.collapsed .menuoptions {
-    display: none;
+/* Logo */
+.header-logo {
+    height: 50px;
 }
 
-/* Reduce outer padding when collapsed */
-.menudialog.collapsed .menuouter {
-    padding: 6px 10px;
+/* Navigation container */
+.header-nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
 }
 
-/* Tighten button spacing */
-.menudialog.collapsed .menubuttons {
-    margin: 0;
-    padding-top: 0;
-    border-top: none;
+/* Remove default link styling */
+.nav-link {
+    text-decoration: none;
+    color: inherit;
 }
-

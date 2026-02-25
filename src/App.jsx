@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Background2 from "./components/Background2";
 import Player from "./components/Player"
+import Footer from "./components/Footer"
 
 import Home from "./pages/Home";
 import Studio from "./pages/Studio";
@@ -10,7 +11,11 @@ import NoPage from "./pages/NoPage";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+
+
 function App(){
+    
+    
     return(
     
     <BrowserRouter>
@@ -27,7 +32,7 @@ function App(){
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
-      
+        <Footer />
     </BrowserRouter>)
 }
 export default App;

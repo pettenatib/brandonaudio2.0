@@ -1,12 +1,14 @@
 import Header from "../components/Header";
 
+import "../index.css"
+
 function Live() {
   return (
     <>
-      
+      <br></br>
       
       <div className="w-screen h-screen flex items-center justify-center">
-        <div className="w-[90vw] rounded-md bg-black border border-gray-800 p-6">
+        <div className="w-[90vw] bg-black border border-gray-800 p-6 shadow">
           <h1 className="text-4xl  text-white">Event Production Experience</h1>
           <h1 className="text-1xl  text-white">While attending SUNY New Paltz I started working in live audio and got to discover the vastly different world of live audio. From running sound for music, theater or events I have done it all. I have significant experience with industry standard consoles, softwares and protocols.<br></br><br></br></h1>
           <h2 className="text-2xl  text-white">Companies and Venues:</h2>

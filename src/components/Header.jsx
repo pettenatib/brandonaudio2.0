@@ -1,67 +1,57 @@
-import PillNav from './PillNav';
-//import logo from '/path/to/logo.svg';
-import "../index.css"
 import { Link } from "react-router-dom";
-import FuzzyText from '../components/FuzzyText';
-import ASCIIText from '../components/ASCIIText';
-import Logo from "../assets/images/balogo.png"
-  
-
-
+import FuzzyText from "../components/FuzzyText";
+import Logo from "../assets/images/balogo.png";
+import "../components/Header.css";
 
 function Header() {
   return (
-    <>
-    <div>
-      
-    </div>
-    
-    <div class="flex flex-col items-center justify-center">
-            <img class="invert h-25 w-100%" src={Logo}></img>
-      
-      
-      <div class="grid grid-cols-3 gap-1">
-        
-        <Link to="/studio">
-        <div>
+    <div className="header-bar">
+
+      {/* LEFT: Logo */}
+      <div className="header-left">
+        <img src={Logo} alt="logo" className="header-logo" />
+      </div>
+
+      {/* RIGHT: Navigation */}
+      <div className="header-nav">
+
+        <Link to="/studio" className="nav-link">
           <FuzzyText
-            fontSize={"2rem"} // 150px
+            fontSize="1.5rem"
             baseIntensity={0}
             hoverIntensity={0.1}
             enableHover
           >
             Engineering Work
           </FuzzyText>
-        </div>
         </Link>
 
-        <Link to="/live">
-        <div>
+        <Link to="/live" className="nav-link">
           <FuzzyText
-            fontSize={"2rem"} // 150px
+            fontSize="1.5rem"
             baseIntensity={0}
             hoverIntensity={0.1}
             enableHover
           >
             Event Production Work
           </FuzzyText>
-        </div>
         </Link>
-        <Link to="/contact">
-        <div>
+
+        <Link to="/contact" className="nav-link">
           <FuzzyText
-            fontSize={"2rem"} // 150px
+            fontSize="1.5rem"
             baseIntensity={0}
             hoverIntensity={0.1}
             enableHover
           >
             Contact
           </FuzzyText>
-        </div>
         </Link>
+
       </div>
+
     </div>
-    </>
-  )
+  );
 }
+
 export default Header;

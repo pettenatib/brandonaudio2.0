@@ -1,0 +1,17 @@
+.footer-bar {
+    background: #00f;          /* same curses blue */
+    color: #54fefe;            /* same cyan text from mainheader */
+
+    font-family: 'Courier New', Courier, monospace;
+
+    width: 100%;
+    padding: 12px 20px;
+
+    border-top: 1px solid #54fefe;
+
+    text-align: center;
+
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
