@@ -44,7 +44,7 @@ div.menudialog div.menuouter div.menutoptext {
 }
 
 div.menudialog div.menuouter {
-    position: relative;
+    position: absolute;
     padding: 15px;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #000;
@@ -73,7 +73,7 @@ div.menudialog div.menuouter div.menubottomborder {
 }
 
 div.menudialog div.menuouter div.menuoptions {
-    position: relative;
+    position: absolute;
     padding: 0;
     border-top: 1px solid #000;
     border-bottom: 1px solid #fff;
@@ -81,8 +81,13 @@ div.menudialog div.menuouter div.menuoptions {
     border-right: 1px solid #fff;
 }
 
-div.menudialog div.menuouter div.menuoptions div.menutopborder { background-color: #fff; }
-div.menudialog div.menuouter div.menuoptions div.menubottomborder { background-color: #000; }
+div.menudialog div.menuouter div.menuoptions div.menutopborder {
+    background-color: #fff;
+}
+
+div.menudialog div.menuouter div.menuoptions div.menubottomborder {
+    background-color: #000;
+}
 
 div.menudialog div.menuouter div.menuoptions ul {
     list-style: none;
@@ -122,15 +127,19 @@ div.menudialog div.menuouter div.menuoptions ul li a:after {
 }
 
 div.menudialog div.menuouter div.menuoptions ul li a span,
-div.menudialog div.menuouter div.menubuttons a span { color: #725dfc; }
+div.menudialog div.menuouter div.menubuttons a span {
+    color: #725dfc;
+}
 
 div.menudialog div.menuouter div.menuoptions ul li a:hover span,
 div.menudialog div.menuouter div.menubuttons a:hover span,
 div.menudialog div.menuouter div.menuoptions ul li a:focus span,
-div.menudialog div.menuouter div.menubuttons a:focus span { color: #f7fb54; }
+div.menudialog div.menuouter div.menubuttons a:focus span {
+    color: #f7fb54;
+}
 
 div.menudialog div.menuouter div.menubuttons {
-    position: relative;
+    position: absolute;
     width: 100%;
     margin: 15px 0 -7px -15px;
     padding-top: 10px;
@@ -147,9 +156,12 @@ div.menudialog div.menuouter div.menubuttons {
     padding: 10px 15px 0 15px;
     border-top: 1px solid #fff;
 
-    display: flex;              /* 🔥 ADD THIS */
-    justify-content: center;    /* center horizontally */
-    gap: 20px;                  /* spacing between buttons */
+    display: flex;
+    /* 🔥 ADD THIS */
+    justify-content: center;
+    /* center horizontally */
+    gap: 20px;
+    /* spacing between buttons */
 }
 
 div.menudialog div.menuouter div.menubuttons a:before,
@@ -161,12 +173,16 @@ div.menudialog div.menuouter div.menubuttons a:after {
 div.menudialog div.menuouter div.menubuttons a:hover:before,
 div.menudialog div.menuouter div.menubuttons a:hover:after,
 div.menudialog div.menuouter div.menubuttons a:focus:before,
-div.menudialog div.menuouter div.menubuttons a:focus:after { color: inherit; }
+div.menudialog div.menuouter div.menubuttons a:focus:after {
+    color: inherit;
+}
 
 /*div.menudialog div.menuouter div.menubuttons a:before { content: "\003c\0000a0"; }
 div.menudialog div.menuouter div.menubuttons a:after { content: "\0000a0\003e"; }*/
 
-div.menudialog div.menuouter div.menubuttons div.menutopborder { background-color: #000; }
+div.menudialog div.menuouter div.menubuttons div.menutopborder {
+    background-color: #000;
+}
 
 
 
@@ -195,4 +211,3 @@ div.menudialog div.menuouter div.menubuttons div.menutopborder { background-colo
     padding-top: 0;
     border-top: none;
 }
-
